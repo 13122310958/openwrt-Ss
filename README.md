@@ -7,18 +7,18 @@
 首先路由器型号需要在openwrt列表中：http://wiki.openwrt.org/toh/start/
 (可以ctrl+F搜索匹配型号)，并记录所用路由器cpu的型号。
 
-### 一.下载路由器CPU型号对应的的固件：https://downloads.openwrt.org/
+### 一.下载路由器CPU型号对应的的固件：https://downloads.openwrt.org/barrier_breaker/14.07/
 
 ### 二.刷机,以下以D-link dir-505为例,其他型号路由类似
-  * 访问路由器上传固件，等待一会儿，勿断电。
+  * 访问路由器上传固件刷机（一般在路由器系统设置里面），等待一会儿，勿断电。
   * 好了之后打开wifi开关，连上openwrt（有的固件默认不没有开启WI-FI需要用网线连接），访问192.168.1.1
   * 设置路由密码，选中Allow remote hosts to connect to local SSH forwarded ports
-  * 设置Country Code为CN-China,设置Transmit Power为20dBm（100mW）
+  * Network->Wifi里，设置Country Code为CN-China,设置Transmit Power为20dBm（100mW）
   * 设置下wifi密码（WI-FI没有启动先启动）。
-  * 修改LAN口，勾掉Bridge interfaces选项，更改网关为192.168.5.1，添加WAN口选择DHCP client选项（如果需要拨号选择PPPoE）,勾上Adapter “eth1”。
+  * Network->Interfaces里，修改LAN口，勾掉Bridge interfaces选项，更改网关为192.168.5.1，添加WAN口选择DHCP client选项（如果需要拨号选择PPPoE）,勾上Adapter “eth1”，设置Firewall Settings为wan。
+刷机成功。
 
 **注意**: 为了和主路由不冲突最好将网关改为其他，比如192.168.5.1
-刷机成功。
 
 ### 三.下载安装包并安装到路由器
 * 下载安装包
