@@ -12,7 +12,7 @@
 ### 一.下载路由器CPU型号对应的的固件：https://downloads.openwrt.org/
 
 ### 二.刷机及配置
-  * 访问路由器（http://192.168.0.1/）上传固件刷机（一般在路由器系统设置里面），等待一会儿，勿断电。
+  * 访问路由器界面上传固件刷机（一般在路由器系统设置里面），等待一会儿，勿断电。
   * 好了之后连上openwrt这个无线（有的型号默认没有开启WI-FI需要用网线连接路由器和电脑），访问http://192.168.1.1/
   * System－》Administertion，设置路由密码，选中Allow remote hosts to connect to local SSH forwarded ports
   * Network－》Wifi，WI-FI没有启动先启动，设置Transmit Power为20dBm（100mW），设置Country Code为CN-China
