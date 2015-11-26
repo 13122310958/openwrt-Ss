@@ -4,7 +4,7 @@
 
 路由器配置方案：ShadowSocks-libev + ChinaDNS
 
-本教程以Dlink dir-505为例，其他型号路由也类似，Openwrt版本：15.05，其他安装包均为最新版。刷机针对有一定技术基础人，刷机有风险，慎重！
+本教程以Dlink dir-505为例，其他型号路由也类似，Openwrt版本：15.05，其他安装包均为最新版。
 
 首先路由器型号需要在openwrt列表中：http://wiki.openwrt.org/toh/start/
 (可以ctrl+F搜索匹配型号)，并记录所用路由器cpu的型号。
