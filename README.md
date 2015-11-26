@@ -13,8 +13,8 @@
 Openwrt15.05为最新版本，很多路由型号并没有编译好的固件，找不到固件请降低版本参考Openwrt14.07教程，或者自行编译。
 
 ### 二.刷机及配置
-  * 访问路由器上传固件刷机（一般在路由器系统设置里面），等待一会儿，勿断电。
-  * 好了之后连上openwrt这个无线（有的型号默认不开启WI-FI需要用网线连接），访问http://192.168.1.1/
+  * 访问路由器界面上传固件刷机（一般在路由器系统设置里面），等待一会儿，勿断电。
+  * 好了之后连上openwrt这个无线（有的型号默认没有开启WI-FI需要用网线连接路由器和电脑），访问http://192.168.1.1/
   * System－》Administertion，设置路由密码，选中Allow remote hosts to connect to local SSH forwarded ports
   * Network－》Wifi，WI-FI没有启动先启动，设置Transmit Power为15dBm（31mW），设置Country Code为CN-China
   * 设置下WIFI名称（ESSID）、密码、加密方式（Encryption,推荐使用WPA-PSK/WPA2-PSK）
