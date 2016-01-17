@@ -61,22 +61,6 @@
 
   **注意**: 期间可能会遇到错误提示,没关系，这时因为安装ipset包后需要重启。
 
-* 编辑配置文件，输入shadowsocks服务器信息
-    ```
-    vi /etc/shadowsocks/config.json
-    ```
-    ```
-    {
-        "server":"你的服务器Ip",
-        "server_port":端口,
-        "local_port":1080,
-        "password":"密码",
-        "timeout":300,
-        "method":"aes-256-cfb"
-    }
-    ```
-    也可在服务－》ShadowSocks 全局设置中输入S’s账号（先去掉使用配置文件，S’s账号需要和服务配置匹配）
-
 * 更改配置，进入路由器管理界面(http://192.168.5.1)
   * 网络－> DHCP/DNS，基本设置里将本地服务器更改为：127.0.0.1#5353，HOSTS和解析文件里勾选“忽略解析文件”和“忽略HOSTS文件”
   * 服务－> ChinaDNS里ChinaDNS上游服务器更改为：114.114.114.114,127.0.0.1:5300 (适合服务器支持UDP转发，较新版本Shadowsocks均支持)
